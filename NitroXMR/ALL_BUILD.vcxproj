@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7593F5D6-EA92-3C67-8170-BFDC3AD9CBE8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" "-BF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" "-BF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" "-BF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" "-BF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\ZERO_CHECK.vcxproj">
+      <Project>{A1C65AA1-4E2D-327D-8F54-2CC82FF8149A}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\cpuid.vcxproj">
+      <Project>{8299D07B-6BEB-31A6-952E-3A9C822B899F}</Project>
+      <Name>cpuid</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\jansson.vcxproj">
+      <Project>{7724AEBA-1EA0-3F06-85C0-27CF3AF58729}</Project>
+      <Name>jansson</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\xmrig.vcxproj">
+      <Project>{B3D4BC40-A32A-3545-82FF-3F0AB792B664}</Project>
+      <Name>xmrig</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

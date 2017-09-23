@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\cpuid_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\asm-bits.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\recog_amd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\recog_intel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\libcpuid_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\libcpuid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\libcpuid_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\libcpuid_constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\libcpuid_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\amd_code_t.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\intel_code_t.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\recog_amd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\recog_intel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\asm-bits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\libcpuid_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2C0C31E5-1256-3D76-889C-B8BC74357768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{FD551B7E-BDCB-37BC-9679-25D0205719BD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

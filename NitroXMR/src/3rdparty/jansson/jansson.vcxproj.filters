@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\dump.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\hashtable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\hashtable_seed.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\load.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\memory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\pack_unpack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\strbuffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\strconv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\utf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\value.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\hashtable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\jansson_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\strbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\utf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\jansson_private_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\jansson_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\jansson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2C0C31E5-1256-3D76-889C-B8BC74357768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{FD551B7E-BDCB-37BC-9679-25D0205719BD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
