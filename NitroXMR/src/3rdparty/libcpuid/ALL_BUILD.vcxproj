@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7593F5D6-EA92-3C67-8170-BFDC3AD9CBE8}</ProjectGuid>
+    <ProjectGuid>{D6334161-0EBF-3895-B446-98F1097424B8}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
@@ -102,10 +102,10 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/src/3rdparty/libcpuid/CMakeLists.txt</Message>
+    <CustomBuild Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" "-BF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/src/3rdparty/libcpuid/CMakeFiles/generate.stamp"
+E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" "-BF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -113,12 +113,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/src/3rdparty/libcpuid/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/src/3rdparty/libcpuid/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" "-BF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/src/3rdparty/libcpuid/CMakeFiles/generate.stamp"
+E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" "-BF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -126,12 +126,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/src/3rdparty/libcpuid/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/src/3rdparty/libcpuid/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" "-BF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/src/3rdparty/libcpuid/CMakeFiles/generate.stamp"
+E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" "-BF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -139,12 +139,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/src/3rdparty/libcpuid/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/src/3rdparty/libcpuid/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" "-BF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/src/3rdparty/libcpuid/CMakeFiles/generate.stamp"
+E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" "-BF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -152,20 +152,20 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/src/3rdparty/libcpuid/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\ZERO_CHECK.vcxproj">
-      <Project>{A1C65AA1-4E2D-327D-8F54-2CC82FF8149A}</Project>
+    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\ZERO_CHECK.vcxproj">
+      <Project>{EFA952B6-029D-30E1-AE6C-5990BD921115}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
-    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\cpuid.vcxproj">
-      <Project>{8299D07B-6BEB-31A6-952E-3A9C822B899F}</Project>
+    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\cpuid.vcxproj">
+      <Project>{A8F65CC1-2DE2-3E66-BD17-2BB251C131C1}</Project>
       <Name>cpuid</Name>
     </ProjectReference>
   </ItemGroup>

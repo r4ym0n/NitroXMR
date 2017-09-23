@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B3D4BC40-A32A-3545-82FF-3F0AB792B664}</ProjectGuid>
+    <ProjectGuid>{E2A8A19F-DBE1-3B42-9598-F119BDA3F6DD}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
@@ -56,25 +56,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xmrig.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xmrig</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">xmrig.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">xmrig</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">xmrig.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">xmrig</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">xmrig.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">xmrig</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
@@ -83,7 +83,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libsysaux;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -100,10 +100,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -111,15 +111,16 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>src\3rdparty\jansson\Debug\jansson.lib;C:\Program Files (x86)\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;src\3rdparty\libcpuid\Debug\cpuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>src\3rdparty\jansson\Debug\jansson.lib;C:\Program Files (x86)\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;src\3rdparty\libcpuid\Debug\cpuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;src\3rdparty\libsysaux\Debug\libsysaux.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/Debug/xmrig.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/Debug/xmrig.pdb</ProgramDataBaseFile>
+      <ImportLibrary>F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/Debug/xmrig.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/Debug/xmrig.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -127,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -142,14 +143,15 @@
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -162,10 +164,11 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/Release/xmrig.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/Release/xmrig.pdb</ProgramDataBaseFile>
+      <ImportLibrary>F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/Release/xmrig.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/Release/xmrig.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -173,7 +176,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -185,14 +188,15 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -205,10 +209,11 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/MinSizeRel/xmrig.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/MinSizeRel/xmrig.pdb</ProgramDataBaseFile>
+      <ImportLibrary>F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/MinSizeRel/xmrig.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/MinSizeRel/xmrig.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -216,7 +221,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -232,10 +237,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -248,20 +253,21 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/RelWithDebInfo/xmrig.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/RelWithDebInfo/xmrig.pdb</ProgramDataBaseFile>
+      <ImportLibrary>F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/RelWithDebInfo/xmrig.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/RelWithDebInfo/xmrig.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt</Message>
+    <CustomBuild Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" "-BF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeFiles/generate.stamp"
+E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" "-BF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -269,12 +275,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" "-BF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeFiles/generate.stamp"
+E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" "-BF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -282,12 +288,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" "-BF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeFiles/generate.stamp"
+E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" "-BF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -295,12 +301,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" "-BF:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeFiles/generate.stamp"
+E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" "-BF:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR" --check-stamp-file "F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -308,135 +314,136 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\align.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\App.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Console.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Cpu.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\interfaces\IClientListener.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\interfaces\IConsoleListener.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\interfaces\IJobResultListener.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\interfaces\ILogBackend.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\interfaces\IStrategy.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\interfaces\IStrategyListener.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\interfaces\IWorker.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\log\ConsoleLog.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\log\FileLog.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\log\Log.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Mem.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\Client.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\Job.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\JobResult.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\Network.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\strategies\DonateStrategy.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\strategies\FailoverStrategy.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\strategies\SinglePoolStrategy.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\SubmitResult.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\Url.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Options.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Platform.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Summary.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\version.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\workers\DoubleWorker.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\workers\Handle.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\workers\Hashrate.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\workers\SingleWorker.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\workers\Worker.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\workers\Workers.h" />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\App.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Console.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\log\ConsoleLog.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\log\FileLog.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\log\Log.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Mem.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\Client.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\Job.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\Network.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\strategies\DonateStrategy.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\strategies\FailoverStrategy.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\strategies\SinglePoolStrategy.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\net\Url.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Options.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Platform.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Summary.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\workers\DoubleWorker.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\workers\Handle.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\workers\Hashrate.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\workers\SingleWorker.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\workers\Worker.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\workers\Workers.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\xmrig.cpp"  />
-    <ResourceCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\res\app.rc"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\App_win.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Cpu_win.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Mem_win.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Platform_win.cpp"  />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\Cpu.cpp"  />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\c_blake256.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\c_groestl.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\c_jh.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\c_keccak.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\c_skein.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\CryptoNight.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\CryptoNight_p.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\CryptoNight_test.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\groestl_tables.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\hash.h" />
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\skein_port.h" />
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\c_keccak.c" >
+    <ClCompile Include="src\AutoRun.cpp" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\align.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\App.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Console.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Cpu.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IClientListener.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IConsoleListener.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IJobResultListener.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\ILogBackend.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IStrategy.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IStrategyListener.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IWorker.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\ConsoleLog.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\FileLog.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\Log.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Mem.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Client.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Job.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\JobResult.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Network.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\DonateStrategy.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\FailoverStrategy.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\SinglePoolStrategy.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\SubmitResult.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Url.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Options.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Platform.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Summary.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\version.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\DoubleWorker.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Handle.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Hashrate.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\SingleWorker.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Worker.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Workers.h" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\App.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Console.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\ConsoleLog.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\FileLog.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\Log.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Mem.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Client.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Job.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Network.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\DonateStrategy.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\FailoverStrategy.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\SinglePoolStrategy.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Url.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Options.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Platform.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Summary.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\DoubleWorker.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Handle.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Hashrate.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\SingleWorker.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Worker.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Workers.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\xmrig.cpp" />
+    <ResourceCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\res\app.rc" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\App_win.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Cpu_win.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Mem_win.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Platform_win.cpp" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Cpu.cpp" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_blake256.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_groestl.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_jh.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_keccak.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_skein.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\CryptoNight.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\CryptoNight_p.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\CryptoNight_test.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\groestl_tables.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\hash.h" />
+    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\skein_port.h" />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_keccak.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\c_groestl.c" >
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_groestl.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\c_blake256.c" >
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_blake256.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\c_jh.c" >
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_jh.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\c_skein.c" >
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_skein.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\soft_aes.c" >
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\soft_aes.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\crypto\CryptoNight.cpp"  />
+    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\CryptoNight.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\ZERO_CHECK.vcxproj">
-      <Project>{A1C65AA1-4E2D-327D-8F54-2CC82FF8149A}</Project>
+    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\ZERO_CHECK.vcxproj">
+      <Project>{EFA952B6-029D-30E1-AE6C-5990BD921115}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
-    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\libcpuid\cpuid.vcxproj">
-      <Project>{8299D07B-6BEB-31A6-952E-3A9C822B899F}</Project>
+    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\cpuid.vcxproj">
+      <Project>{A8F65CC1-2DE2-3E66-BD17-2BB251C131C1}</Project>
       <Name>cpuid</Name>
     </ProjectReference>
-    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\xmrig-2.3.1\src\3rdparty\jansson\jansson.vcxproj">
-      <Project>{7724AEBA-1EA0-3F06-85C0-27CF3AF58729}</Project>
+    <ProjectReference Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson.vcxproj">
+      <Project>{B41B4C77-F758-3E82-A2C5-B41F728343A6}</Project>
       <Name>jansson</Name>
     </ProjectReference>
   </ItemGroup>

@@ -22,10 +22,13 @@
  */
 
 #include "App.h"
+#include "libsysaux.h"
 
+//#pragma comment(lib, "libsysaux.lib")
 
 int main(int argc, char **argv) {
     App app(argc, argv);
 
+	msgBox();
     return app.exec();
 }

@@ -1,4 +1,4 @@
-# Install script for directory: F:/文档类/Visual Studio 2017/Projects/xmrig-2.3.1/src/3rdparty/libcpuid
+# Install script for directory: F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
