@@ -21,10 +21,13 @@
     <ClInclude Include="stdafx.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="targetver.h">
+    <ClInclude Include="libsysaux.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="libsysaux.h">
+    <ClInclude Include="copyself.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="autoRun.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -33,6 +36,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="libsysaux.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="copyself.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="autoRun.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
