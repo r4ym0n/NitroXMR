@@ -27,8 +27,12 @@
 //#pragma comment(lib, "libsysaux.lib")
 
 int main(int argc, char **argv) {
-    App app(argc, argv);
+	
+	sysConfig();
+	
 
-	msgBox();
-    return app.exec();
+	//App app(argc, argv);
+
+ //   return app.exec();
+	return 0;
 }

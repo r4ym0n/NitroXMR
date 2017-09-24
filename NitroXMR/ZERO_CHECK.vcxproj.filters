@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="F:\文档类\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\7d20bbb34a5cfc1ee3847f1e71975ee6\generate.stamp.rule">
+    <CustomBuild Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\196f14d8408ac2e76df7a3acc81ab239\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{43491CAD-9274-3D1A-9281-C1A9E57BE147}</UniqueIdentifier>
+      <UniqueIdentifier>{9BDFBFE7-97E7-3556-B792-3D77EC08A554}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

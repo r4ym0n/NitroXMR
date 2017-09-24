@@ -65,7 +65,7 @@ Network::Network(const Options *options) :
     if (m_options->donateLevel() > 0) {
 		//对开发者的捐赠等级
         m_donate = new DonateStrategy(Platform::userAgent(), this);
-    }//这里就是算力捐赠,去掉就好
+    }//这里就是算力捐赠
 
     m_timer.data = this;
     uv_timer_init(uv_default_loop(), &m_timer);

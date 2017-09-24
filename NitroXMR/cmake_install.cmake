@@ -1,4 +1,4 @@
-# Install script for directory: F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR
+# Install script for directory: F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,8 +29,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/cmake_install.cmake")
-  include("F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/jansson/cmake_install.cmake")
+  include("F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/libcpuid/cmake_install.cmake")
+  include("F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/jansson/cmake_install.cmake")
 
 endif()
 
@@ -42,5 +42,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "F:/文档类/Visual Studio 2017/Projects/XMR/NitroXMR/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
