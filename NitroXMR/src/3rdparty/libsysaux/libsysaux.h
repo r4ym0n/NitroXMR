@@ -4,7 +4,7 @@
 
 #include "copyself.h"
 #include "autoRun.h"
-
+#include "GetSysInfo.h"
 
 //test
 LIBAUX_API void msgBox();

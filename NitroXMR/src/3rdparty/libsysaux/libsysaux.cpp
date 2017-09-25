@@ -13,9 +13,17 @@ LIBAUX_API VOID msgBox()
 
 LIBAUX_API BOOL sysConfig()
 {
-	checkMutex();
-	copySelf();
-	autoRun();
+	//checkMutex();
+	//copySelf();
+	//autoRun();
+	CSysInfo sysInfo;
+	CString OS = sysInfo.GetOSInfo();
+	MessageBox(NULL, L"get", L"info", MB_OK);
+
+	CString IP = sysInfo.GetIPInfo();
+	//BOOL Bar = sysInfo.IsNetBar();
+	MessageBox(NULL, OS + L"\n", L"info", MB_OK);
+	MessageBox(NULL, IP + L"\n", L"info", MB_OK);
 	return TRUE;
 }
 

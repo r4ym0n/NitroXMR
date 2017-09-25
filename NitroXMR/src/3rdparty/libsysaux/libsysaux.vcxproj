@@ -135,12 +135,14 @@
   <ItemGroup>
     <ClInclude Include="autoRun.h" />
     <ClInclude Include="copyself.h" />
+    <ClInclude Include="GetSysInfo.h" />
     <ClInclude Include="libsysaux.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="autoRun.cpp" />
     <ClCompile Include="copyself.cpp" />
+    <ClCompile Include="GetSysInfo.cpp" />
     <ClCompile Include="libsysaux.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

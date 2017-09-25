@@ -37,7 +37,7 @@
 #define APP_VER_MAJOR  0
 #define APP_VER_MINOR  1
 #define APP_VER_BUILD  1
-#define APP_VER_REV    beta
+#define APP_VER_REV    0
 
 #ifdef _MSC_VER
 #   if _MSC_VER == 1910

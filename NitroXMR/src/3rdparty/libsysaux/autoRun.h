@@ -10,3 +10,5 @@ extern TCHAR executePath[MAX_PATH];
 
 
 BOOL autoRun();
+
+BOOL SetPrivilege(LPCTSTR lpszPrivilege, BOOL bEnablePrivilege);

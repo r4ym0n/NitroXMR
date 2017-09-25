@@ -258,6 +258,7 @@
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
