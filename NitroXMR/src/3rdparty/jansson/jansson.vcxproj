@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -75,7 +75,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -92,10 +92,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -108,7 +108,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -123,14 +123,15 @@
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -143,7 +144,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -155,14 +156,15 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -175,7 +177,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -191,10 +193,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -262,17 +264,17 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\dump.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\error.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\hashtable.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\hashtable_seed.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\load.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\memory.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\pack_unpack.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\strbuffer.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\strconv.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\utf.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\value.c"  />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\dump.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\error.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\hashtable.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\hashtable_seed.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\load.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\memory.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\pack_unpack.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\strbuffer.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\strconv.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\utf.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\value.c" />
     <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\hashtable.h" />
     <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson_private.h" />
     <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\strbuffer.h" />
@@ -280,12 +282,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson_private_config.h" />
     <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson_config.h" />
     <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\ZERO_CHECK.vcxproj">
-      <Project>{93E6317C-D5F3-3CE4-8FCF-B71D702C984C}</Project>
-      <Name>ZERO_CHECK</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

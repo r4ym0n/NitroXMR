@@ -10,116 +10,116 @@ include (CheckIncludeFile)
 
 set(HEADERS
     src/3rdparty/align.h
-    src/miner/App.h
-    src/miner/Console.h
-    src/miner/Cpu.h
-    src/miner/interfaces/IClientListener.h
-    src/miner/interfaces/IConsoleListener.h
-    src/miner/interfaces/IJobResultListener.h
-    src/miner/interfaces/ILogBackend.h
-    src/miner/interfaces/IStrategy.h
-    src/miner/interfaces/IStrategyListener.h
-    src/miner/interfaces/IWorker.h
-    src/miner/log/ConsoleLog.h
-    src/miner/log/FileLog.h
-    src/miner/log/Log.h
-    src/miner/Mem.h
-    src/miner/net/Client.h
-    src/miner/net/Job.h
-    src/miner/net/JobResult.h
-    src/miner/net/Network.h
-    src/miner/net/strategies/DonateStrategy.h
-    src/miner/net/strategies/FailoverStrategy.h
-    src/miner/net/strategies/SinglePoolStrategy.h
-    src/miner/net/SubmitResult.h
-    src/miner/net/Url.h
-    src/miner/Options.h
-    src/miner/Platform.h
-    src/miner/Summary.h
-    src/miner/version.h
-    src/miner/workers/DoubleWorker.h
-    src/miner/workers/Handle.h
-    src/miner/workers/Hashrate.h
-    src/miner/workers/SingleWorker.h
-    src/miner/workers/Worker.h
-    src/miner/workers/Workers.h
+    src/App.h
+    src/Console.h
+    src/Cpu.h
+    src/interfaces/IClientListener.h
+    src/interfaces/IConsoleListener.h
+    src/interfaces/IJobResultListener.h
+    src/interfaces/ILogBackend.h
+    src/interfaces/IStrategy.h
+    src/interfaces/IStrategyListener.h
+    src/interfaces/IWorker.h
+    src/log/ConsoleLog.h
+    src/log/FileLog.h
+    src/log/Log.h
+    src/Mem.h
+    src/net/Client.h
+    src/net/Job.h
+    src/net/JobResult.h
+    src/net/Network.h
+    src/net/strategies/DonateStrategy.h
+    src/net/strategies/FailoverStrategy.h
+    src/net/strategies/SinglePoolStrategy.h
+    src/net/SubmitResult.h
+    src/net/Url.h
+    src/Options.h
+    src/Platform.h
+    src/Summary.h
+    src/version.h
+    src/workers/DoubleWorker.h
+    src/workers/Handle.h
+    src/workers/Hashrate.h
+    src/workers/SingleWorker.h
+    src/workers/Worker.h
+    src/workers/Workers.h
    )
 
 set(HEADERS_CRYPTO
-    src/miner/crypto/c_blake256.h
-    src/miner/crypto/c_groestl.h
-    src/miner/crypto/c_jh.h
-    src/miner/crypto/c_keccak.h
-    src/miner/crypto/c_skein.h
-    src/miner/crypto/CryptoNight.h
-    src/miner/crypto/CryptoNight_p.h
-    src/miner/crypto/CryptoNight_test.h
-    src/miner/crypto/groestl_tables.h
-    src/miner/crypto/hash.h
-    src/miner/crypto/skein_port.h
+    src/crypto/c_blake256.h
+    src/crypto/c_groestl.h
+    src/crypto/c_jh.h
+    src/crypto/c_keccak.h
+    src/crypto/c_skein.h
+    src/crypto/CryptoNight.h
+    src/crypto/CryptoNight_p.h
+    src/crypto/CryptoNight_test.h
+    src/crypto/groestl_tables.h
+    src/crypto/hash.h
+    src/crypto/skein_port.h
    )
 
 set(SOURCES
-    src/miner/App.cpp
-    src/miner/Console.cpp
-    src/miner/log/ConsoleLog.cpp
-    src/miner/log/FileLog.cpp
-    src/miner/log/Log.cpp
-    src/miner/Mem.cpp
-    src/miner/net/Client.cpp
-    src/miner/net/Job.cpp
-    src/miner/net/Network.cpp
-    src/miner/net/strategies/DonateStrategy.cpp
-    src/miner/net/strategies/FailoverStrategy.cpp
-    src/miner/net/strategies/SinglePoolStrategy.cpp
-    src/miner/net/Url.cpp
-    src/miner/Options.cpp
-    src/miner/Platform.cpp
-    src/miner/Summary.cpp
-    src/miner/workers/DoubleWorker.cpp
-    src/miner/workers/Handle.cpp
-    src/miner/workers/Hashrate.cpp
-    src/miner/workers/SingleWorker.cpp
-    src/miner/workers/Worker.cpp
-    src/miner/workers/Workers.cpp
-    src/miner/xmrig.cpp
+    src/App.cpp
+    src/Console.cpp
+    src/log/ConsoleLog.cpp
+    src/log/FileLog.cpp
+    src/log/Log.cpp
+    src/Mem.cpp
+    src/net/Client.cpp
+    src/net/Job.cpp
+    src/net/Network.cpp
+    src/net/strategies/DonateStrategy.cpp
+    src/net/strategies/FailoverStrategy.cpp
+    src/net/strategies/SinglePoolStrategy.cpp
+    src/net/Url.cpp
+    src/Options.cpp
+    src/Platform.cpp
+    src/Summary.cpp
+    src/workers/DoubleWorker.cpp
+    src/workers/Handle.cpp
+    src/workers/Hashrate.cpp
+    src/workers/SingleWorker.cpp
+    src/workers/Worker.cpp
+    src/workers/Workers.cpp
+    src/xmrig.cpp
    )
 
 set(SOURCES_CRYPTO
-    src/miner/crypto/c_keccak.c
-    src/miner/crypto/c_groestl.c
-    src/miner/crypto/c_blake256.c
-    src/miner/crypto/c_jh.c
-    src/miner/crypto/c_skein.c
-    src/miner/crypto/soft_aes.c
-    src/miner/crypto/soft_aes.c
-    src/miner/crypto/CryptoNight.cpp
+    src/crypto/c_keccak.c
+    src/crypto/c_groestl.c
+    src/crypto/c_blake256.c
+    src/crypto/c_jh.c
+    src/crypto/c_skein.c
+    src/crypto/soft_aes.c
+    src/crypto/soft_aes.c
+    src/crypto/CryptoNight.cpp
    )
 
 if (WIN32)
     set(SOURCES_OS
         res/app.rc
-        src/miner/App_win.cpp
-        src/miner/Cpu_win.cpp
-        src/miner/Mem_win.cpp
-        src/miner/Platform_win.cpp
+        src/App_win.cpp
+        src/Cpu_win.cpp
+        src/Mem_win.cpp
+        src/Platform_win.cpp
         )
 
     add_definitions(/DWIN32)
     set(EXTRA_LIBS ws2_32 psapi iphlpapi userenv)
 elseif (APPLE)
     set(SOURCES_OS
-        src/miner/App_unix.cpp
-        src/miner/Cpu_mac.cpp
-        src/miner/Mem_unix.cpp
-        src/miner/Platform_mac.cpp
+        src/App_unix.cpp
+        src/Cpu_mac.cpp
+        src/Mem_unix.cpp
+        src/Platform_mac.cpp
         )
 else()
     set(SOURCES_OS
-        src/miner/App_unix.cpp
-        src/miner/Cpu_unix.cpp
-        src/miner/Mem_unix.cpp
-        src/miner/Platform_unix.cpp
+        src/App_unix.cpp
+        src/Cpu_unix.cpp
+        src/Mem_unix.cpp
+        src/Platform_unix.cpp
         )
 
     set(EXTRA_LIBS pthread)
@@ -179,19 +179,19 @@ if (WITH_LIBCPUID)
 
     include_directories(src/3rdparty/libcpuid)
     set(CPUID_LIB cpuid)
-    set(SOURCES_CPUID src/miner/Cpu.cpp)
+    set(SOURCES_CPUID src/Cpu.cpp)
 else()
     add_definitions(/DXMRIG_NO_LIBCPUID)
-    set(SOURCES_CPUID src/miner/Cpu_stub.cpp)
+    set(SOURCES_CPUID src/Cpu_stub.cpp)
 endif()
 
 CHECK_INCLUDE_FILE (syslog.h HAVE_SYSLOG_H)
 if (HAVE_SYSLOG_H)
     add_definitions(/DHAVE_SYSLOG_H)
-    set(SOURCES_SYSLOG src/miner/log/SysLog.h src/miner/log/SysLog.cpp)
+    set(SOURCES_SYSLOG src/log/SysLog.h src/log/SysLog.cpp)
 endif()
 
-include_directories(src/miner)
+include_directories(src)
 include_directories(src/3rdparty)
 include_directories(src/3rdparty/jansson)
 include_directories(${UV_INCLUDE_DIR})

@@ -75,9 +75,20 @@ CString CSysInfo::GetOSInfo()
 				break;
 			case 2:
 				if (os.wProductType == VER_NT_WORKSTATION)
-					osname = "Microsoft Windows 8";
+				{
+					if (IsWindows10OrGreater())
+					{
+						osname = "Microsoft Windows 10";
+					}//这里使用新函数检测是否为 win10 
+					else
+					{
+						osname = "Microsoft Windows 8";
+					}
+				}
 				else
+				{
 					osname = "Microsoft Windows Server 2012";
+				}
 				break;
 			case 3:
 				if (os.wProductType == VER_NT_WORKSTATION)
@@ -118,7 +129,6 @@ CString CSysInfo::GetIPInfo()
 	int ret = WSAStartup(MAKEWORD(2, 2), &wsaData);
 	if (ret == 0)
 	{
-		MessageBox(NULL, L"here", L"info", MB_OK);
 		//2.获取主机名  
 		char hostname[256];
 		ret = gethostname(hostname, sizeof(hostname));
@@ -127,6 +137,7 @@ CString CSysInfo::GetIPInfo()
 			printf("error with return %d\n", ret);
 			return invalidIP;
 		}
+		printf("%s\n", hostname);
 		//3.获取主机ip  
 		HOSTENT* host = gethostbyname(hostname);
 		if (host == NULL)
@@ -198,3 +209,32 @@ BOOL CSysInfo::IsNetBar()
 	}
 	return FALSE;
 }
+
+BOOL CSysInfo::IsRunAsAdmin()
+{
+	BOOL bElevated = FALSE;
+	HANDLE hToken = NULL;
+
+	// 打开当前用户令牌
+	if (!OpenProcessToken(GetCurrentProcess(), TOKEN_QUERY, &hToken))
+		return FALSE;
+
+	TOKEN_ELEVATION tokenEle;
+	DWORD dwRetLen = 0;
+
+	// 取得用户令牌提升信息
+	if (GetTokenInformation(hToken, TokenElevation, &tokenEle, sizeof(tokenEle), &dwRetLen))
+	{
+		if (dwRetLen == sizeof(tokenEle))
+		{
+			bElevated = tokenEle.TokenIsElevated;
+			//是否为Admin
+		}
+	}
+	CloseHandle(hToken);
+	
+	return bElevated;
+}
+
+
+

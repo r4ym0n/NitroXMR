@@ -63,7 +63,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -73,7 +73,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -83,7 +83,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -93,7 +93,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>

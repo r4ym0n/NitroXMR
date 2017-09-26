@@ -14,6 +14,9 @@ public:
 	CString GetMACInfo();
 	
 
+	static BOOL IsNetBar();
+	static BOOL IsRunAsAdmin();
+
 	////// IS /////////
 	//system
 	//BOOL IsWin7();
@@ -22,7 +25,6 @@ public:
 	//BOOL IsWin8_1();
 	//BOOL IsWin10();
 	//netbar
-	BOOL IsNetBar();
 
 	///////////////////
 public:

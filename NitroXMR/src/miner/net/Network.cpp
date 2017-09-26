@@ -53,9 +53,8 @@ Network::Network(const Options *options) :
     Workers::setListener(this);
 
     const std::vector<Url*> &pools = options->pools();
-	//对矿池地址做引用
 
-    if (pools.size() > 1) {//vector  的大小 ,也就是矿池地址个数
+    if (pools.size() > 1) {
         m_strategy = new FailoverStrategy(pools, Platform::userAgent(), this);
     }
     else {
@@ -63,15 +62,13 @@ Network::Network(const Options *options) :
     }
 
     if (m_options->donateLevel() > 0) {
-		//对开发者的捐赠等级
         m_donate = new DonateStrategy(Platform::userAgent(), this);
-    }//这里就是算力捐赠
+    }
 
     m_timer.data = this;
     uv_timer_init(uv_default_loop(), &m_timer);
 
     uv_timer_start(&m_timer, Network::onTick, kTickInterval, kTickInterval);
-	//开始咯
 }
 
 

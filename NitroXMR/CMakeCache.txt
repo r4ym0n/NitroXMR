@@ -159,6 +159,9 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=OFF
 
+//The directory containing a CMake configuration file for UV.
+UV_DIR:PATH=UV_DIR-NOTFOUND
+
 //Path to a file.
 UV_INCLUDE_DIR:PATH=C:/Program Files (x86)/libuv/include
 

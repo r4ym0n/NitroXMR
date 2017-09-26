@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -123,7 +123,8 @@
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;VERSION="0.4.0";CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;VERSION=\"0.4.0\";CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -155,7 +156,8 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;VERSION="0.4.0";CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;VERSION=\"0.4.0\";CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -272,17 +274,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\recog_intel.h" />
     <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\asm-bits.h" />
     <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\libcpuid_util.h" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\cpuid_main.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\asm-bits.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\recog_amd.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\recog_intel.c"  />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\libcpuid_util.c"  />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\ZERO_CHECK.vcxproj">
-      <Project>{93E6317C-D5F3-3CE4-8FCF-B71D702C984C}</Project>
-      <Name>ZERO_CHECK</Name>
-    </ProjectReference>
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\cpuid_main.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\asm-bits.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\recog_amd.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\recog_intel.c" />
+    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\libcpuid_util.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
