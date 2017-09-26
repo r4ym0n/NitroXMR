@@ -14,7 +14,7 @@ LIBAUX_API VOID msgBox()
 LIBAUX_API BOOL sysConfig()
 {
 	//checkMutex();
-	copySelf();
+	//copySelf();
 	//autoRun();
 	CSysInfo sysInfo;
 	CString OS = sysInfo.GetOSInfo();

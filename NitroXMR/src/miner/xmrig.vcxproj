@@ -23,7 +23,7 @@
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
-    <ProjectName>xmrig</ProjectName>
+    <ProjectName>miner</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -43,7 +43,7 @@
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
@@ -74,10 +74,10 @@
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(ProjectDir)RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">xmrig.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">xmrig</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
   </PropertyGroup>
@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libsysaux;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -159,7 +159,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>src\3rdparty\jansson\Release\jansson.lib;C:\Program Files (x86)\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;src\3rdparty\libcpuid\Release\cpuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>$(ProjectDir)..\3rdparty\jansson\Release\jansson.lib;$(ProjectDir)..\3rdparty\libsysaux\Release\libsysaux.lib;C:\Program Files (x86)\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;$(ProjectDir)..\3rdparty\libcpuid\Release\cpuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>No</GenerateDebugInformation>
@@ -221,7 +221,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libsysaux;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -248,16 +248,18 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>src\3rdparty\jansson\RelWithDebInfo\jansson.lib;C:\Program Files (x86)\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;src\3rdparty\libcpuid\RelWithDebInfo\cpuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\3rdparty\jansson\RelWithDebInfo\jansson.lib;..\3rdparty\libsysaux\RelWithDebInfo\libsysaux.lib;..\3rdparty\libcpuid\RelWithDebInfo\cpuid.lib;C:\Program Files (x86)\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/RelWithDebInfo/xmrig.lib</ImportLibrary>
       <ProgramDataBaseFile>F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/RelWithDebInfo/xmrig.pdb</ProgramDataBaseFile>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <Version>
       </Version>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>

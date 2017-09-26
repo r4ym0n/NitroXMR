@@ -25,14 +25,23 @@
 #include "libsysaux.h"
 
 //#pragma comment(lib, "libsysaux.lib")
+//#pragma comment( linker, "/SUBSYSTEM:\"WINDOWS\" /entry:\"mainCRTStartup\"" )  //这里修改函数的入口点
 
-int main(int argc, char **argv) {
-	
-	sysConfig();
-	
+//#pragma comment( linker, "/SUBSYSTEM:WINDOWS" )  //这个宏有点小问题
 
-	//App app(argc, argv);
+//这里把子系统设为windows 这样就没有控制台了
 
- //   return app.exec();
-	return 0;
-}
+//int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
+//	_In_opt_ HINSTANCE hPrevInstance,
+//	_In_ LPWSTR    lpCmdLine,
+//	_In_ int       nCmdShow) 
+//{
+//	
+//	sysConfig();
+//	
+//
+//	//App app(argc, argv);
+//
+// //   return app.exec();
+//	return 0;
+//}
