@@ -22,6 +22,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "miner", "src\miner\xmrig.vc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NitroMain", "src\NitroMain\NitroMain.vcxproj", "{17043F91-F0B0-4B14-BB85-616FD3F8E7E9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ToolKit", "src\ToolKit\ToolKit.vcxproj", "{885979BD-81FD-4930-8482-902BC23A1FC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -110,6 +112,22 @@ Global
 		{17043F91-F0B0-4B14-BB85-616FD3F8E7E9}.RelWithDebInfo|Win32.Build.0 = Release|Win32
 		{17043F91-F0B0-4B14-BB85-616FD3F8E7E9}.RelWithDebInfo|x64.ActiveCfg = Release|x64
 		{17043F91-F0B0-4B14-BB85-616FD3F8E7E9}.RelWithDebInfo|x64.Build.0 = Release|x64
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.Debug|Win32.Build.0 = Debug|Win32
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.Debug|x64.ActiveCfg = Debug|x64
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.Debug|x64.Build.0 = Debug|x64
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.MinSizeRel|Win32.ActiveCfg = Release|Win32
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.MinSizeRel|Win32.Build.0 = Release|Win32
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.MinSizeRel|x64.ActiveCfg = Release|x64
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.MinSizeRel|x64.Build.0 = Release|x64
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.Release|Win32.ActiveCfg = Release|Win32
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.Release|Win32.Build.0 = Release|Win32
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.Release|x64.ActiveCfg = Release|x64
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.Release|x64.Build.0 = Release|x64
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.RelWithDebInfo|Win32.ActiveCfg = Release|Win32
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.RelWithDebInfo|Win32.Build.0 = Release|Win32
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{885979BD-81FD-4930-8482-902BC23A1FC4}.RelWithDebInfo|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

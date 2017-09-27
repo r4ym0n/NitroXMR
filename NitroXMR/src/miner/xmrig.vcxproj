@@ -379,7 +379,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Worker.cpp" />
     <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Workers.cpp" />
     <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\xmrig.cpp" />
-    <ResourceCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\res\app.rc" />
     <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\App_win.cpp" />
     <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Cpu_win.cpp" />
     <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Mem_win.cpp" />

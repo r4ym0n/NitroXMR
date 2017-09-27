@@ -16,7 +16,7 @@ public:
 
 	static BOOL IsNetBar();
 	static BOOL IsRunAsAdmin();
-
+	static BOOL IsWow64();
 	////// IS /////////
 	//system
 	//BOOL IsWin7();

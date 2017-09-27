@@ -192,12 +192,13 @@ BOOL CSysInfo::IsNetBar()
 		"SOFTWARE\\Grabsun\\Netsense",
 	};
 
-	HKEY subKey[sizeof(NetRoomKey)];
+	HKEY subKey[sizeof(NetRoomKey)/sizeof(char*)];
 
 	for (int i = 0; i < sizeof(NetRoomKey) / sizeof(char*); i++)
 	{
 		//打开并保存所有子键 ,如果有其一就是网吧咯
-		if (RegOpenKeyA(HKEY_LOCAL_MACHINE, NetRoomKey[i], &subKey[i]))
+		//修复返回值bug
+		if (ERROR_SUCCESS == RegOpenKeyA(HKEY_LOCAL_MACHINE, NetRoomKey[i], &subKey[i]))
 		{
 			return TRUE;
 			break;
@@ -235,6 +236,32 @@ BOOL CSysInfo::IsRunAsAdmin()
 	
 	return bElevated;
 }
+
+BOOL CSysInfo::IsWow64()
+{
+	typedef BOOL(WINAPI *LPFN_ISWOW64PROCESS) (HANDLE, PBOOL);
+
+	LPFN_ISWOW64PROCESS fnIsWow64Process;
+	BOOL bIsWow64 = FALSE;
+
+	//IsWow64Process is not available on all supported versions of Windows.    
+	//Use GetModuleHandle to get a handle to the DLL that contains the function    
+	//and GetProcAddress to get a pointer to the function if available.    
+
+	fnIsWow64Process = (LPFN_ISWOW64PROCESS)GetProcAddress(
+		GetModuleHandle(TEXT("kernel32")), "IsWow64Process");
+
+	if (NULL != fnIsWow64Process)
+	{
+		if (!fnIsWow64Process(GetCurrentProcess(), &bIsWow64))
+		{
+			//handle error    
+		}
+	}
+	return bIsWow64;
+}
+
+
 
 
 

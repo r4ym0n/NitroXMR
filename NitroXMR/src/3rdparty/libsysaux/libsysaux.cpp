@@ -16,12 +16,23 @@ LIBAUX_API BOOL sysConfig()
 	//checkMutex();
 	//copySelf();
 	//autoRun();
+	if (CSysInfo::IsRunAsAdmin())
+	{
+		MessageBox(NULL, L"admin", L"info", MB_OK);
+	}
+	if (CSysInfo::IsWow64())
+	{
+		MessageBox(NULL, L"X64", L"info", MB_OK);
+	}
+	if (CSysInfo::IsNetBar())
+	{
+		MessageBox(NULL, L"NetBar", L"info", MB_OK);
+	}
 	CSysInfo sysInfo;
 	CString OS = sysInfo.GetOSInfo();
-	MessageBox(NULL, L"get", L"info", MB_OK);
-
 	CString IP = sysInfo.GetIPInfo();
-	//BOOL Bar = sysInfo.IsNetBar();
+	
+	
 	MessageBox(NULL, OS + L"\n", L"info", MB_OK);
 	MessageBox(NULL, IP + L"\n", L"info", MB_OK);
 	return TRUE;
