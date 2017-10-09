@@ -5,11 +5,12 @@
 
 #pragma once
 
+//#include <afx.h>
 #include "targetver.h"
+
 
 #include <stdio.h>
 #include <tchar.h>
-
-
+#include <thread>
 
 // TODO: 在此处引用程序需要的其他头文件

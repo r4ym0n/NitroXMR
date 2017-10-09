@@ -11,7 +11,7 @@ LIBAUX_API VOID msgBox()
 
 }
 
-LIBAUX_API BOOL sysConfig()
+LIBAUX_API BOOL SysConfig()
 {
 	//checkMutex();
 	//copySelf();

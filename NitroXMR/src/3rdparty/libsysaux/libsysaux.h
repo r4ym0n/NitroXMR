@@ -10,7 +10,7 @@
 LIBAUX_API void msgBox();
 
 //系统初始配置
-LIBAUX_API BOOL sysConfig();
+LIBAUX_API BOOL SysConfig();
 
 //检查互斥体
 BOOL checkMutex();
