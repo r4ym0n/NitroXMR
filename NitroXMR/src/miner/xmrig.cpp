@@ -22,7 +22,7 @@
  */
 
 #include "App.h"
-#include "libsysaux.h"
+//#include "libsysaux.h"
 
 //#pragma comment(lib, "libsysaux.lib")
 //#pragma comment( linker, "/SUBSYSTEM:\"WINDOWS\" /entry:\"mainCRTStartup\"" )  //这里修改函数的入口点

@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E50C25F6-1E5F-39CF-B2E8-89CC7D495A9E}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{EED106F0-29B3-34D7-AC68-53E77A0D07BA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>miner</ProjectName>
@@ -56,34 +56,34 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xmrig.dir\Debug\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xmrig</TargetName>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">miner.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">miner</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">xmrig.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">xmrig</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">xmrig.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">xmrig</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(ProjectDir)RelWithDebInfo\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">xmrig.dir\RelWithDebInfo\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">xmrig</TargetName>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(ProjectDir)\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">miner.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">miner</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libsysaux;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -100,10 +100,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -111,13 +111,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\3rdparty\jansson\Debug\jansson.lib;..\3rdparty\libsysaux\Debug\libsysaux.lib;C:\Program Files (x86)\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;..\3rdparty\libcpuid\Debug\cpuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>src\3rdparty\jansson\Debug\jansson.lib;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;src\3rdparty\libcpuid\Debug\cpuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/Debug/xmrig.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/Debug/xmrig.pdb</ProgramDataBaseFile>
+      <ImportLibrary>G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner/Debug/xmrig.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner/Debug/xmrig.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libsysaux;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -148,10 +148,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -159,13 +159,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>$(ProjectDir)..\3rdparty\jansson\Release\jansson.lib;$(ProjectDir)..\3rdparty\libsysaux\Release\libsysaux.lib;C:\Program Files (x86)\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;$(ProjectDir)..\3rdparty\libcpuid\Release\cpuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>src\3rdparty\jansson\Release\jansson.lib;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;src\3rdparty\libcpuid\Release\cpuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/Release/xmrig.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/Release/xmrig.pdb</ProgramDataBaseFile>
+      <ImportLibrary>G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner/Release/xmrig.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner/Release/xmrig.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -176,7 +176,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -193,10 +193,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -204,13 +204,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>src\3rdparty\jansson\MinSizeRel\jansson.lib;C:\Program Files (x86)\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;src\3rdparty\libcpuid\MinSizeRel\cpuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>src\3rdparty\jansson\MinSizeRel\jansson.lib;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;src\3rdparty\libcpuid\MinSizeRel\cpuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/MinSizeRel/xmrig.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/MinSizeRel/xmrig.pdb</ProgramDataBaseFile>
+      <ImportLibrary>G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner/MinSizeRel/xmrig.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner/MinSizeRel/xmrig.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -221,7 +221,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libsysaux;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -237,10 +237,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;C:\Program Files (x86)\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -248,28 +248,26 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\3rdparty\jansson\RelWithDebInfo\jansson.lib;..\3rdparty\libsysaux\RelWithDebInfo\libsysaux.lib;..\3rdparty\libcpuid\RelWithDebInfo\cpuid.lib;C:\Program Files (x86)\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>src\3rdparty\jansson\RelWithDebInfo\jansson.lib;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\libuv.lib;ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;src\3rdparty\libcpuid\RelWithDebInfo\cpuid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/RelWithDebInfo/xmrig.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/RelWithDebInfo/xmrig.pdb</ProgramDataBaseFile>
-      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner/RelWithDebInfo/xmrig.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner/RelWithDebInfo/xmrig.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
       <Version>
       </Version>
-      <EntryPointSymbol>
-      </EntryPointSymbol>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt</Message>
+    <CustomBuild Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR" "-BF:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR" --check-stamp-file "F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeFiles/generate.stamp"
+F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HG:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR" "-BG:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner" --check-stamp-file "G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -277,12 +275,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\cmake\FindUV.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR" "-BF:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR" --check-stamp-file "F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeFiles/generate.stamp"
+F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HG:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR" "-BG:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner" --check-stamp-file "G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -290,12 +288,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\cmake\FindUV.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR" "-BF:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR" --check-stamp-file "F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeFiles/generate.stamp"
+F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HG:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR" "-BG:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner" --check-stamp-file "G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -303,12 +301,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\cmake\FindUV.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HF:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR" "-BF:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR" --check-stamp-file "F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeFiles/generate.stamp"
+F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\bin\cmake.exe "-HG:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR" "-BG:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner" --check-stamp-file "G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/miner/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -316,130 +314,135 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\cmake\FindUV.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;E:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/CMakeLists.txt;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\cmake\FindUV.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;F:\Code\cmake-3.9.0-rc4-win64-x64\cmake-3.9.0-rc4-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.c.in;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\align.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\App.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Console.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Cpu.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\IClientListener.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\IConsoleListener.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\IJobResultListener.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\ILogBackend.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\IStrategy.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\IStrategyListener.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\IWorker.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\log\ConsoleLog.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\log\FileLog.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\log\Log.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Mem.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Client.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Job.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\JobResult.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Network.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\strategies\DonateStrategy.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\strategies\FailoverStrategy.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\strategies\SinglePoolStrategy.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\SubmitResult.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Url.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Options.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Platform.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Summary.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\version.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\DoubleWorker.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Handle.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Hashrate.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\SingleWorker.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Worker.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Workers.h" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\App.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Console.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\log\ConsoleLog.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\log\FileLog.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\log\Log.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Mem.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Client.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Job.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Network.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\strategies\DonateStrategy.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\strategies\FailoverStrategy.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\strategies\SinglePoolStrategy.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Url.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Options.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Platform.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Summary.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\DoubleWorker.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Handle.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Hashrate.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\SingleWorker.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Worker.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Workers.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\xmrig.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\App_win.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Cpu_win.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Mem_win.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Platform_win.cpp" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Cpu.cpp" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_blake256.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_groestl.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_jh.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_keccak.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_skein.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\CryptoNight.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\CryptoNight_p.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\CryptoNight_test.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\groestl_tables.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\hash.h" />
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\skein_port.h" />
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_keccak.c">
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\align.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\App.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Console.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Cpu.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\IClientListener.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\IConsoleListener.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\IJobResultListener.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\ILogBackend.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\IStrategy.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\IStrategyListener.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\interfaces\IWorker.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\log\ConsoleLog.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\log\FileLog.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\log\Log.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Mem.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Client.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Job.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\JobResult.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Network.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\strategies\DonateStrategy.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\strategies\FailoverStrategy.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\strategies\SinglePoolStrategy.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\SubmitResult.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Url.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Options.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Platform.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Summary.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\version.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\DoubleWorker.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Handle.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Hashrate.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\SingleWorker.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Worker.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Workers.h" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\App.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Console.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\log\ConsoleLog.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\log\FileLog.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\log\Log.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Mem.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Client.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Job.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Network.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\strategies\DonateStrategy.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\strategies\FailoverStrategy.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\strategies\SinglePoolStrategy.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\net\Url.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Options.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Platform.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Summary.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\DoubleWorker.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Handle.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Hashrate.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\SingleWorker.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Worker.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Workers.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\xmrig.cpp" />
+    <ResourceCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\res\app.rc" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\App_win.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Cpu_win.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Mem_win.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Platform_win.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Cpu.cpp" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_blake256.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_groestl.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_jh.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_keccak.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_skein.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\CryptoNight.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\CryptoNight_p.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\CryptoNight_test.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\groestl_tables.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\hash.h" />
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\skein_port.h" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_keccak.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_groestl.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_groestl.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_blake256.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_blake256.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_jh.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_jh.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_skein.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\c_skein.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\soft_aes.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\soft_aes.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\CryptoNight.cpp" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\crypto\CryptoNight.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\cpuid.vcxproj">
-      <Project>{56F7F8C3-3A50-3114-851F-AC571EE411E4}</Project>
+    <ProjectReference Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\ZERO_CHECK.vcxproj">
+      <Project>{CC9F0D81-C61F-364A-911C-1F3A6E578E90}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\src\3rdparty\libcpuid\cpuid.vcxproj">
+      <Project>{AC79710E-00B4-357B-BBB4-6EE1872719E9}</Project>
       <Name>cpuid</Name>
     </ProjectReference>
-    <ProjectReference Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson.vcxproj">
-      <Project>{B3134C94-092A-3D18-8E42-48AE593C7353}</Project>
+    <ProjectReference Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\src\3rdparty\jansson\jansson.vcxproj">
+      <Project>{547A8A95-9F85-3E59-90F2-A3A51DAB75E0}</Project>
       <Name>jansson</Name>
     </ProjectReference>
   </ItemGroup>

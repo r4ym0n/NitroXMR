@@ -164,7 +164,8 @@ static const char *algo_names[] = {
 Options *Options::parse(int argc, char **argv)
 {
     Options *options = new Options(argc, argv);
-   
+   //参数表初始化
+
 	if (options->isReady()) {
         m_self = options;
         return m_self;
@@ -203,7 +204,7 @@ Options::Options(int argc, char **argv) : //一堆参数初始化表
     m_affinity(-1L)
 {
 	//m_pools 是个 vector的容器 是URL为模板
-	//push_back:在矢量末尾处添加一个元素。
+	//push_back:在向量末尾处添加一个元素。
     m_pools.push_back(new Url());
 
     int key;
@@ -211,10 +212,13 @@ Options::Options(int argc, char **argv) : //一堆参数初始化表
     while (1) {
 		//这里是比较重要的部分,对命令传入的参数进行识别
 		//shortOP 是所有可能参数选项 op是参数表
+		//参数匹配看不懂......
 		key = getopt_long(argc, argv, short_options, options, NULL);
         if (key < 0) {
             break;
         }
+		//上面算是吧这个opt给分开
+
 		//这里根据参数名arg,参数值key 进行设置
         if (!parseArg(key, optarg)) {
             return;
@@ -226,11 +230,11 @@ Options::Options(int argc, char **argv) : //一堆参数初始化表
         return;
     }
 
-    if (!m_pools[0]->isValid()) {					//进行矿池初始化
+    if (!m_pools[0]->isValid()) {					//如果在参数没有指定矿池的情况下
         parseConfig(Platform::defaultConfigName()); //如果参数不对的话就加载这默认配置文件 config.json
     }
 
-    if (!m_pools[0]->isValid()) {					//初始化之后还是不对就
+    if (!m_pools[0]->isValid()) {					//初始化之后还是不对就直接退出
         fprintf(stderr, "No pool URL supplied. Exiting.\n");
         return;
     }
@@ -260,7 +264,7 @@ Options::~Options()
 {
 }
 
-
+//这里设置自定义参数
 bool Options::parseArg(int key, const char *arg)
 {
     switch (key) {

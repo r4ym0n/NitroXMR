@@ -68,6 +68,7 @@ App::App(int argc, char **argv) :
     }
 	//ÉÏÃæÍÚ¿óÅäÖÃÍê±Ï
 
+
     Log::init();
 
     if (!m_options->background()) {

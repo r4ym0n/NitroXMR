@@ -1,72 +1,72 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\dump.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\dump.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\error.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\error.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\hashtable.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\hashtable.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\hashtable_seed.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\hashtable_seed.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\load.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\load.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\memory.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\memory.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\pack_unpack.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\pack_unpack.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\strbuffer.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\strbuffer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\strconv.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\strconv.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\utf.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\utf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\value.c">
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\value.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\hashtable.h">
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\hashtable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson_private.h">
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson_private.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\strbuffer.h">
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\strbuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\utf.h">
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\utf.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson_private_config.h">
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson_private_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson_config.h">
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson.h">
+    <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\jansson.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\CMakeLists.txt" />
+    <CustomBuild Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{C2AA8F0B-434B-36CC-96E9-8DB869B41B7C}</UniqueIdentifier>
+      <UniqueIdentifier>{72096F47-7808-3107-B3BD-B25176B22734}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{A0739A06-09A7-3D71-9077-3A85A8B57F0D}</UniqueIdentifier>
+      <UniqueIdentifier>{DEEFEB9E-4B27-3501-9A6C-3CF361395087}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

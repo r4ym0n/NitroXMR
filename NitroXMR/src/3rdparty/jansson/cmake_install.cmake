@@ -1,8 +1,8 @@
-# Install script for directory: F:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/jansson
+# Install script for directory: G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/jansson
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/xmrig")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/jansson")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,3 +27,13 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+if(CMAKE_INSTALL_COMPONENT)
+  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
+else()
+  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
+endif()
+
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+file(WRITE "G:/Documents/Visual Studio 2017/Projects/XMR/NitroXMR/src/3rdparty/jansson/${CMAKE_INSTALL_MANIFEST}"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

