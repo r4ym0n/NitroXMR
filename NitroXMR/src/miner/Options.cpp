@@ -163,6 +163,7 @@ static const char *algo_names[] = {
 
 Options *Options::parse(int argc, char **argv)
 {
+
     Options *options = new Options(argc, argv);
    //参数表初始化
 
@@ -205,9 +206,12 @@ Options::Options(int argc, char **argv) : //一堆参数初始化表
 {
 	//m_pools 是个 vector的容器 是URL为模板
 	//push_back:在向量末尾处添加一个元素。
-    m_pools.push_back(new Url());
 
-    int key;
+/*************************************************************************/
+	/*这段用于读取命令行,我们这里不需要配置*/
+#if 0
+    m_pools.push_back(new Url()); //填充地址 pool0
+	int key;
 
     while (1) {
 		//这里是比较重要的部分,对命令传入的参数进行识别
@@ -224,11 +228,18 @@ Options::Options(int argc, char **argv) : //一堆参数初始化表
             return;
         }
     }
-
-    if (optind < argc) {
+    
+	if (optind < argc) {
         fprintf(stderr, "%s: unsupported non-option argument '%s'\n", argv[0], argv[optind]);
         return;
     }
+#endif
+/****************************************************************************/
+	if (SetArgs())
+	{
+		
+	}
+
 
     if (!m_pools[0]->isValid()) {					//如果在参数没有指定矿池的情况下
         parseConfig(Platform::defaultConfigName()); //如果参数不对的话就加载这默认配置文件 config.json
@@ -259,6 +270,30 @@ Options::Options(int argc, char **argv) : //一堆参数初始化表
 	//这里信息配置完毕
 }
 
+bool Options::SetArgs()
+{
+	//o
+	
+//	if (m_pools.size() > 1 || m_pools[0]->isValid()) {
+		
+		Url *url = new Url("mine.moneropool.com:3333");
+		
+		if (url->isValid()) {
+			m_pools.push_back(url);
+		}
+		else {
+			delete url;
+		}
+//	}
+	//u
+	m_pools.back()->setUser("42FWmAzd2vjZCTrdgAmuvtEoDxQnT6R25Dx7wdUDB7EdVDN4bJ2k4wV2gA3cBwmZKr53eD4P4pJgA8fC7dhZ3ZQePzZ8SUq");
+	//p
+	m_pools.back()->setPassword("x");
+	//k
+	parseBoolean('k', true);
+	
+	return TRUE;
+}
 
 Options::~Options()
 {
@@ -513,7 +548,7 @@ void Options::parseConfig(const char *fileName)
     uv_fs_t req;
     const int fd = uv_fs_open(uv_default_loop(), &req, fileName, O_RDONLY, 0644, nullptr);
     if (fd < 0) {
-        fprintf(stderr, "unable to open %s: %s\n", fileName, uv_strerror(fd));
+        fprintf(stderr, "unable to open! %s: %s\n", fileName, uv_strerror(fd));
         return;
     }
 

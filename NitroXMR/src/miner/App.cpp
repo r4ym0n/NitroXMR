@@ -57,7 +57,6 @@ App::App(int argc, char **argv) :
     m_options(nullptr)
 {
     m_self = this;
-
 	//cpu ≥ı ºªØ 
     Cpu::init();
 

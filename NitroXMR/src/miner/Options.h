@@ -78,11 +78,17 @@ public:
 
 private:
     Options(int argc, char **argv);
-    ~Options();
+	
+	
+	~Options();
 
     inline bool isReady() const { return m_ready; }
 
     static Options *m_self;
+	
+	bool SetArgs();
+	////////////////
+
 
     bool parseArg(int key, const char *arg);
     bool parseArg(int key, uint64_t arg);

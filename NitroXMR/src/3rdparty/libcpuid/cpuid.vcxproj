@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -56,8 +56,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cpuid.dir\Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cpuid</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\Release\</OutDir>
@@ -121,7 +121,8 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;VERSION="0.4.0";CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;VERSION=\"0.4.0\";CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -153,7 +154,8 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;VERSION="0.4.0";CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;VERSION=\"0.4.0\";CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -270,11 +272,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\recog_intel.h" />
     <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\asm-bits.h" />
     <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\libcpuid_util.h" />
-    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\cpuid_main.c"  />
-    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\asm-bits.c"  />
-    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\recog_amd.c"  />
-    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\recog_intel.c"  />
-    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\libcpuid_util.c"  />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\cpuid_main.c" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\asm-bits.c" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\recog_amd.c" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\recog_intel.c" />
+    <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\libcpuid_util.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid\ZERO_CHECK.vcxproj">

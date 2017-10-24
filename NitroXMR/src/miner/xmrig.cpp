@@ -31,17 +31,13 @@
 
 //这里把子系统设为windows 这样就没有控制台了
 
-//int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
-//	_In_opt_ HINSTANCE hPrevInstance,
-//	_In_ LPWSTR    lpCmdLine,
-//	_In_ int       nCmdShow) 
-//{
-//	
-//	sysConfig();
-//	
-//
-//	//App app(argc, argv);
-//
-// //   return app.exec();
-//	return 0;
-//}
+int main(int argc, char **argv)
+{
+
+	
+
+	App app(argc, argv);
+
+    return app.exec();
+	return 0;
+}
