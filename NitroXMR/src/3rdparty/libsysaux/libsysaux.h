@@ -2,8 +2,7 @@
 
 #include "stdafx.h"
 
-#include "copyself.h"
-#include "autoRun.h"
+
 #include "GetSysInfo.h"
 
 //test

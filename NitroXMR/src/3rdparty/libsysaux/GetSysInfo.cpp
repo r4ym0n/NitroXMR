@@ -115,7 +115,7 @@ CString CSysInfo::GetOSInfo()
 	 //https://msdn.microsoft.com/en-us/library/ms724832.aspx  
 	
 	m_OSstring = osname;
-
+	wprintf("[*] Current Windows Version : " + m_OSstring + "\n");
 	return osname;
 }
 
@@ -153,9 +153,12 @@ CString CSysInfo::GetIPInfo()
 		mbstowcs(wip, ip, strlen(ip)+1);
 
 		m_IPstring.Append(wip);
-		
+		wprintf("[*] Current IP Address : " + m_IPstring + "\n");
+
 		return m_IPstring;
 	}
+	wprintf("[*] Get IP Failed! : " + invalidIP + "\n");
+
 	return invalidIP;
 }
 
@@ -200,14 +203,19 @@ BOOL CSysInfo::IsNetBar()
 		//–ﬁ∏¥∑µªÿ÷µbug
 		if (ERROR_SUCCESS == RegOpenKeyA(HKEY_LOCAL_MACHINE, NetRoomKey[i], &subKey[i]))
 		{
+			printf("[*] IS NetBar : YES\n");
+
 			return TRUE;
 			break;
 		}
 	}
+
 	for (int i = 0; i < sizeof(NetRoomKey) / sizeof(char*); i++)
 	{
 		RegCloseKey(subKey[i]);
 	}
+	
+	printf("[*] IS NetBar : NO\n");
 	return FALSE;
 }
 

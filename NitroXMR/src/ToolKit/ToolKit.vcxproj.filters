@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\exp">
+      <UniqueIdentifier>{3506b3c8-163d-4ce1-b73b-d163cf59670d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -32,11 +35,17 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MS11-046%28x86%29.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="ToolKit.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="autoRun.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="copyself.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MS11-046%28x86%29.cpp">
+      <Filter>源文件\exp</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

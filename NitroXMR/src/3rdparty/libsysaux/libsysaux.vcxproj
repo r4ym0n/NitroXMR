@@ -75,8 +75,8 @@
     <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>F:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libsysaux\RelWithDebInfo\</OutDir>
-    <IntDir>libsysaux.dir\$(Configuration)\</IntDir>
+    <OutDir>$(projectDir)\$(Configuration)\</OutDir>
+    <IntDir>$(projectDir)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -143,8 +143,6 @@
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="autoRun.cpp" />
-    <ClCompile Include="copyself.cpp" />
     <ClCompile Include="GetSysInfo.cpp" />
     <ClCompile Include="libsysaux.cpp" />
     <ClCompile Include="Removable.cpp" />

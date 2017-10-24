@@ -14,4 +14,10 @@
 
 // TODO: 在此处引用程序需要的其他头文件
 #include <windows.h>
-
+#include <stdio.h>
+#include <windows.h>
+#include <VersionHelpers.h>
+#include <stdlib.h>
+#include <iostream>
+#include <atlbase.h>
+#include <atlstr.h>

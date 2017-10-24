@@ -15,6 +15,13 @@ CToolKit::~CToolKit()
 
 }
 
+BOOL CToolKit::IsAdmin()
+{
+	bAdmin = CSysInfo::IsRunAsAdmin();
+	return bAdmin;
+}
+
+
 int CToolKit::execExp(int order)
 {	
 

