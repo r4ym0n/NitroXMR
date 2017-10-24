@@ -22,7 +22,8 @@
  */
 
 #include "App.h"
-//#include "libsysaux.h"
+#include "stdafx.h"
+
 
 //#pragma comment(lib, "libsysaux.lib")
 //#pragma comment( linker, "/SUBSYSTEM:\"WINDOWS\" /entry:\"mainCRTStartup\"" )  //这里修改函数的入口点
@@ -31,13 +32,39 @@
 
 //这里把子系统设为windows 这样就没有控制台了
 
-int main(int argc, char **argv)
+// dllmain.cpp : 定义 DLL 应用程序的入口点。
+
+HMODULE g_hDllModule; //定义Dll本身的句柄，方便自身函数回调
+
+
+BOOL APIENTRY DllMain(HMODULE hModule,
+	DWORD  ul_reason_for_call,
+	LPVOID lpReserved
+)
 {
+	switch (ul_reason_for_call)
+	{
+	case DLL_PROCESS_ATTACH:
+		printf("\nprocess attach of dll\n");
 
-	
+		//保存Dll 自身的句柄
+		g_hDllModule = (HMODULE)hModule;
 
-	App app(argc, argv);
+	case DLL_THREAD_ATTACH:
+		printf("\nthread attach of dll\n");
 
-    return app.exec();
-	return 0;
+	case DLL_THREAD_DETACH:
+		printf("\nthread detach of dll\n");
+
+	case DLL_PROCESS_DETACH:
+		printf("\nprocess detach of dll\n");
+
+		break;
+	}
+	return TRUE;
+}
+
+int _stdcall Add(int a, int b)
+{
+	return a + b;
 }
