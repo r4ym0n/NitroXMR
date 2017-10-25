@@ -95,6 +95,50 @@ App::App(int argc, char **argv) :
 	//至此矿机配置完毕
 }
 
+App::App() :
+	m_console(nullptr),
+	m_network(nullptr),
+	m_options(nullptr)
+{
+	m_self = this;
+	//cpu 初始化 
+	Cpu::init();
+
+	//这里是个静态方法 new 一个自己 返回this
+	m_options = Options::parse(argc, argv);
+	if (!m_options) {
+		return;
+	}
+	//上面挖矿配置完毕
+
+
+	Log::init();
+
+	if (!m_options->background()) {
+		Log::add(new ConsoleLog(m_options->colors()));
+		m_console = new Console(this);
+	}//显示一个终端窗口
+
+	if (m_options->logFile()) {
+		Log::add(new FileLog(m_options->logFile()));
+	}//创建一个log文件
+
+#   ifdef HAVE_SYSLOG_H
+	if (m_options->syslog()) {
+		Log::add(new SysLog());
+	}
+#   endif
+
+	Platform::init(m_options->userAgent());
+	//设置代理,没必要
+	Platform::setProcessPriority(m_options->priority());
+	//配置进程优先级
+	m_network = new Network(m_options);
+
+	uv_signal_init(uv_default_loop(), &m_signal);
+	//至此矿机配置完毕
+}
+
 
 App::~App()
 {
