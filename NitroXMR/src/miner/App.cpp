@@ -105,7 +105,7 @@ App::App() :
 	Cpu::init();
 
 	//这里是个静态方法 new 一个自己 返回this
-	m_options = Options::parse(argc, argv);
+	m_options = Options::parse();
 	if (!m_options) {
 		return;
 	}

@@ -176,12 +176,80 @@ Options *Options::parse(int argc, char **argv)
     return nullptr;
 }
 
+Options *Options::parse()
+{
+	Options *options = new Options();
+	//参数表初始化
+
+	if (options->isReady()) {
+		m_self = options;
+		return m_self;
+	}
+	//否则说明参数不对
+	delete options;
+	return nullptr;
+}
 
 const char *Options::algoName() const
 {
     return algo_names[m_algo];
 }
 
+Options::Options() : //一堆参数初始化表
+	m_background(false),
+	m_colors(true),
+	m_doubleHash(false),
+	m_hugePages(true),
+	m_ready(false),
+	m_safe(false),
+	m_syslog(false),
+	m_logFile(nullptr),
+	m_userAgent(nullptr),
+	m_algo(0),
+	m_algoVariant(0),
+	m_donateLevel(kDonateLevel),
+	m_maxCpuUsage(75),
+	m_printTime(60),
+	m_priority(-1),
+	m_retries(5),
+	m_retryPause(5),
+	m_threads(0),
+	m_affinity(-1L)
+{
+	if (SetArgs())
+	{
+
+	}
+
+
+	if (!m_pools[0]->isValid()) {					//如果在参数没有指定矿池的情况下
+		parseConfig(Platform::defaultConfigName()); //如果参数不对的话就加载这默认配置文件 config.json
+	}
+
+	if (!m_pools[0]->isValid()) {					//初始化之后还是不对就直接退出
+		fprintf(stderr, "No pool URL supplied. Exiting.\n");
+		return;
+	}
+
+	m_algoVariant = getAlgoVariant();
+	if (m_algoVariant == AV2_AESNI_DOUBLE || m_algoVariant == AV4_SOFT_AES_DOUBLE) {
+		m_doubleHash = true;
+	}
+
+	if (!m_threads) {
+		m_threads = Cpu::optimalThreadsCount(m_algo, m_doubleHash, m_maxCpuUsage);
+		//这里创建一个线程
+	}
+	else if (m_safe) {
+		const int count = Cpu::optimalThreadsCount(m_algo, m_doubleHash, m_maxCpuUsage);
+		if (m_threads > count) {
+			m_threads = count;
+		}
+	}
+
+	m_ready = true;
+	//这里信息配置完毕
+}
 
 Options::Options(int argc, char **argv) : //一堆参数初始化表
     m_background(false),

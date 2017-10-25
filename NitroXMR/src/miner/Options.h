@@ -53,6 +53,8 @@ public:
 
     static inline Options* i() { return m_self; }
     static Options *parse(int argc, char **argv);
+	static Options * parse();
+
 
     inline bool background() const                { return m_background; }
     inline bool colors() const                    { return m_colors; }
@@ -76,8 +78,10 @@ public:
 
     const char *algoName() const;
 
+
 private:
     Options(int argc, char **argv);
+	Options();
 	
 	
 	~Options();
