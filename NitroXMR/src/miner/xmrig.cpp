@@ -31,13 +31,3 @@
 
 //这里把子系统设为windows 这样就没有控制台了
 
-int main(int argc, char **argv)
-{
-
-	
-
-	App app(argc, argv);
-
-    return app.exec();
-	return 0;
-}

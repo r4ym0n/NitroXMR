@@ -54,8 +54,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,	_In_opt_ HINSTANCE hPrevInstance
 	
 
 
-	//App minerApp(0, NULL); //伪参数
-	//StartMiner(minerApp);
+	App minerApp; //伪参数
+	StartMiner(minerApp);
 
 	MSG msg;
 	while (GetMessage(&msg, NULL, 0, 0))

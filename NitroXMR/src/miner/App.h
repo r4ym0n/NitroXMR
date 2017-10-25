@@ -40,6 +40,7 @@ class App : public IConsoleListener
 {
 public:
   App(int argc, char **argv);
+  App();
   ~App();
 
   int exec();
