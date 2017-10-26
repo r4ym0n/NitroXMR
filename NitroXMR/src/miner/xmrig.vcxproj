@@ -24,7 +24,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
@@ -53,7 +53,7 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)$(Configuration)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">miner</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(projectDir)\Release\</OutDir>
@@ -75,7 +75,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Custom;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -165,7 +165,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Custom;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libcpuid;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\jansson;G:\Documents\Visual Studio 2017\Projects\NitroXMR\src\miner\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -251,6 +251,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Custom\InjectProc.h" />
+    <ClInclude Include="Custom\stdafx.h" />
     <ClInclude Include="donate.h" />
     <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\align.h" />
     <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\App.h" />
@@ -286,6 +288,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\SingleWorker.h" />
     <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Worker.h" />
     <ClInclude Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\workers\Workers.h" />
+    <ClCompile Include="Custom\InjectProc.cpp" />
     <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\App.cpp" />
     <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\Console.cpp" />
     <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\log\ConsoleLog.cpp" />
