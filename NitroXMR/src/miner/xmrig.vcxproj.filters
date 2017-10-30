@@ -4,9 +4,6 @@
     <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\xmrig.cpp">
       <Filter>Source Files\Custom</Filter>
     </ClCompile>
-    <ClCompile Include="Custom\InjectProc.cpp">
-      <Filter>Source Files\Custom</Filter>
-    </ClCompile>
     <ClCompile Include="G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\miner\App.cpp">
       <Filter>Source Files\Core</Filter>
     </ClCompile>

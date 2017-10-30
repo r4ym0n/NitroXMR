@@ -2,7 +2,7 @@
 #include "stdafx.h"
 
 //注入
-BOOL InjectDll(TCHAR szDllFullPath[], DWORD dwRemoteProcessID);
+BOOL InjectDll(PCWSTR szDllFullPath, DWORD dwRemoteProcessID);
 
 // 进程名解析Pid
 DWORD GetProcID(TCHAR szProcName[]);
