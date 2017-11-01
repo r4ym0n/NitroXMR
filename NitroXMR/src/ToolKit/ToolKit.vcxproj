@@ -87,6 +87,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libsysaux;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\ToolKit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

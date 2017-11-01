@@ -33,6 +33,6 @@
     <ResourceCompile Include="DllLoader.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\Release\MinerDll.dll" />
+    <None Include="..\..\Release\MinerDllcopy.dll" />
   </ItemGroup>
 </Project>

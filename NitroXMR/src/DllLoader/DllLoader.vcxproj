@@ -38,6 +38,7 @@
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -92,6 +93,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\DllLoader;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\ToolKit;G:\Documents\Visual Studio 2017\Projects\XMR\NitroXMR\src\3rdparty\libsysaux;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -162,7 +164,7 @@
     <ResourceCompile Include="DllLoader.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\Release\MinerDll.dll" />
+    <None Include="..\..\Release\MinerDllcopy.dll" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

